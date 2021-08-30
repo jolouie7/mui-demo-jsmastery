@@ -54,7 +54,21 @@ function App() {
           </Container>
         </div>
         <Container className={classes.cardGrid} maxWidth="md">
-          
+          <Grid container spacing={4}>
+            <Grid item>
+              <Card className={classes.card}>
+                <CardMedia className={classes.cardMedia} image="https://source.unsplash.com/random" title="card title" />
+                <CardContent className={classes.cardContent}>
+                  <Typography gutterBottom variant="h5">
+                    Heading
+                  </Typography>
+                  <Typography>
+                    This section is the content for the media card, you can use this section to write whatever you want.
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
+          </Grid>
         </Container>
       </main>
     </>
